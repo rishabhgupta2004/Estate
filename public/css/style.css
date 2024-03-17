@@ -1,0 +1,104 @@
+body{
+    font-family: "plus jarkarta sans",sans-serif;
+}
+
+.navbar{
+    height:5rem;
+
+}
+.fa-compass{
+    color:darkgreen ;
+    font-size: 2rem;
+
+}
+.nav-link{
+    color: #222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+    color: darkgreen;
+
+    
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    height:8rem;
+    background-color: gray;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:space-events;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brands{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-socials {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.card{
+    border: none !important;
+    margin-bottom:2rem ;
+}
+.card-img-top{
+    border-radius:1rem  !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text p{
+    font-weight:400 ;
+}
+.listing-link{
+    text-decoration: none;
+
+
+}
+.card-img-overlay {
+    opacity: 0;
+    transition: opacity 0.3s; /* Optional: Add a smooth transition effect */
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+.add-btn{
+    background-color: orangered !important;
+    border: none;
+}
+
+.edit-btn{
+    background-color: orangered !important;
+    border: none;
+}
+
+.show-img{
+    height:30vh;
+
+}
+.btns{
+    display: flex;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+
+}

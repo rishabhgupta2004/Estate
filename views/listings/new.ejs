@@ -1,0 +1,60 @@
+<% layout("/layouts/boilerplate") -%>
+  <div class="row mt-2">
+    <div class="col-8 offset-2">
+    <h3>Create a New Listing</h3>
+    <form method="POST" action="/listings" novalidate class="needs-validation">
+     
+      <div>
+      <lable for="title" class="form-title">title</lable>
+      <input name="listing[title]" placeholder="enter title" type="text"class="form-control" required />
+      </div>
+      <div class="valid-feedback">Title looks good!</div>
+      <div>
+        <lable for="description" class="form-label">Desription</lable>
+      <textarea
+        name="listing[description]"
+        placeholder="enter description"
+        class="form-control"
+        required
+      ></textarea>
+      <div class="invalid-feedback">Please enter a Description</div> 
+      </div>
+      <div>
+        <lable for="image" class="form-label">Image link</lable>
+      <input
+        name="listing[image]"
+        placeholder="enter image URL/Link"
+        type="text"
+        class="form-control"
+      />
+      
+      </div>
+      <div>
+        <div class="row">
+          <div class="mb-3 col-md-4">
+        <lable for="price" class="form-label">price</lable>
+      <input name="listing[price]" placeholder="enter price"type="number"  class="form-control" required/>
+      <div class="invalid-feedback">Please  enter a valid price</div>
+      </div>
+      <div class="mb-3 col-md-8">
+
+        <lable for="country" class="form-label">country</lable>
+      
+      <input name="listing[country]" placeholder="enter country" type="text" class="form-control" required />
+      <div class="invalid-feedback">Please  enter the country name</div>
+    </div>
+  </div>
+      <div>
+        <lable for="location" class="form-label">location</lable>
+      <input
+        name="listing[location]"
+        placeholder="enter location"
+        type="text"
+        class="form-control"
+        required
+      />
+      <div class="invalid-feedback">location should be valid</div>
+      <button class="btn btn-dark mt-3 add-btn">Add</button>
+    </form>
+    </div>
+  </div>
